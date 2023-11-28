@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'Inter-regular';
+	src: url(‘/font/Inter/Inter-Regular’) format(‘truetype’);
+
+    font-family: 'Inter-light';
+	src: url(‘/font/Inter/Inter-Light) format(‘truetype’);
+
+    font-family: 'Inter-medium';
+	src: url(‘/font/Inter/Inter-Medium) format(‘truetype’);
+
+    font-family: 'Dahlia';
+    src: url(‘/font/dahlia) format('opentype');
+}
+// Variables de typographie
+    // Base values
+    $base-font-size: 24px;
+    $base-line-height: 1.5;
+
+
+    // Font family
+    $font-family-light: 'Inter-light', sans-serif;
+    $font-family-regular: 'Inter-regular', sans-serif;
+    $font-family-medium: 'Inter-medium', sans-serif;
+    $font-family-dahlia: 'Dahlia', serif;
+
+
+    // Calculez les tailles de police basées sur le $base-font-size
+    $font-size-h1: 200px;
+    $font-size-h2: 96px;
+    $font-size-h3: 32px;
+    $font-size-body: $base-font-size;
+
+    // Calculez les marges basées sur le $base-font-size
+    $margin-bottom-h1: normal;
+    $margin-bottom-h2: $base-font-size * 0.75;
+    $margin-bottom-h3: $base-font-size * 0.5;
+    $margin-bottom-body: $base-font-size * 1.25;
+
+// Couleurs
+    $color-primary: #D1BFE8;
+    $color-secondary: #3e2b44;
+    $color-accent: #e74c3c;
+    $color-background: #ecf0f1;
+
+    // Blanc et Gris
+    $color-white: #ffffff;
+    $color-light-gray: #f2f2f2;
+    $color-medium-gray: #888888;
+    $color-dark-gray: #333333;
+
+    // Noir
+    $color-pure-black: #000000;
+    $color-black: #333333;
+
+    // Texte
+    $color-text: $color-black;
+
+// Spacing 
+    $spacing-unit: 8px;
+
+    $spacing-0: 0;
+    $spacing-1x: $spacing-unit;
+    $spacing-2x: $spacing-unit * 2;
+    $spacing-3x: $spacing-unit * 3;
+    $spacing-4x: $spacing-unit * 4;
+    $spacing-5x: $spacing-unit * 5;
+    $spacing-6x: $spacing-unit * 6;
+    $spacing-7x: $spacing-unit * 7;
+    $spacing-8x: $spacing-unit * 8;

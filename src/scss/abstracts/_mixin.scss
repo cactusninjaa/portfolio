@@ -1,0 +1,89 @@
+// _mixins.scss
+
+
+
+// Mixin pour Flexbox
+@mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-item($flex: 1, $order: 0) {
+    flex: $flex;
+    order: $order;
+}
+
+// Mixin pour Grid Layout
+@mixin grid-container($columns: 12, $gap: 10px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin grid-item($col-span: 1, $row-span: 1) {
+    grid-column: span $col-span;
+    grid-row: span $row-span;
+}
+
+// Mixin pour la propriété de texte centré
+@mixin center-text {
+    text-align: center;
+}
+
+// Mixin pour la propriété de boîte centrée
+@mixin center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin pour les préfixes de navigateur
+@mixin prefix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+
+// Mixin pour la boîte d'ombre
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+// Mixin pour la transition
+@mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
+    transition: $properties $duration $timing-function;
+}
+
+// Mixin pour les médias
+@mixin respond-to($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Mixin pour couleur de fond
+@mixin background-color($color) {
+    background-color: $color;
+}
+
+// Mixin pour couleur de texte
+@mixin text-color($color) {
+    color: $color;
+}
+
+// Mixin pour padding
+@mixin padding($padding) {
+    padding: $padding;
+}
+
+// Mixin pour margin
+@mixin margin($margin) {
+    margin: $margin;
+}

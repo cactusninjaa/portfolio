@@ -1,0 +1,39 @@
+// Bouton de base
+
+@import '../abstracts/variables';
+@import '../base/typography';
+@import '../abstracts/mixin';
+
+%base-button {
+  @include padding($spacing-2x);
+  @include text-color($color-white);
+  @include background-color($color-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    @include background-color(darken($color-primary, 10%));
+  }
+}
+
+// Bouton secondaire
+%secondary-button {
+  @extend %base-button;
+  @include background-color($color-secondary);
+
+  &:hover {
+    @include background-color(darken($color-secondary, 10%));
+  }
+}
+
+// Bouton d'accent
+%accent-button {
+  @extend %base-button;
+  @include background-color($color-accent);
+
+  &:hover {
+    @include background-color(darken($color-accent, 10%));
+  }
+}

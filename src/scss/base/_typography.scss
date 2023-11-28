@@ -1,0 +1,96 @@
+// Titre de premier niveau
+@import '../abstracts/variables';
+@import '../abstracts/mixin';
+
+%heading1{
+  font-size: $font-size-h1;
+  font-family: $font-family-dahlia;
+  margin-bottom: $margin-bottom-h1;
+  color: $color-primary;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+// Titre de deuxième niveau
+%heading2 {
+  font-size: $font-size-h2;
+  font-family: $font-family-medium;
+  margin-bottom: $margin-bottom-h2;
+  color: $color-white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+// Titre de troisième niveau
+%heading3 {
+  font-size: $font-size-h3;
+  font-family: $font-family-regular;
+  margin-bottom: $margin-bottom-h3;
+  color: $color-white;
+  font-weight: 400;
+}
+
+// Texte de base mince
+%body-text-normal {
+  font-family: $font-family-light;
+  font-size: $font-size-body;
+  line-height: $base-line-height;
+  margin-bottom: $margin-bottom-body;
+  color: $color-white;
+  font-weight: 300;
+}
+
+// Liens
+%link {
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  @extend %heading1;
+  @include respond-to(920px) {
+    font-size: 160px;
+  }
+  @include respond-to(660px) {
+    font-size: 120px;
+  }
+  @include respond-to(520px) {
+    font-size: 100px;
+  }
+  @include respond-to(440px) {
+    font-size: 80px;
+  }
+}
+h2 {
+  @extend %heading2;
+  @include respond-to(920px) {
+    font-size: 64px;
+  }
+  @include respond-to(660px) {
+    font-size: 48px;
+  }
+
+}
+h3 {
+  @extend %heading3;
+  @include respond-to(920px) {
+    font-size: 24px;
+  }
+}
+p {
+  @extend %body-text-normal;
+  @include respond-to(920px) {
+    font-size: 18px;
+  }
+}
+a {
+  @extend %link;
+  @include respond-to(920px) {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,512 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Inter-regular";
+  src: url(‘/font/Inter/Inter-Regular’) format(‘truetype’);
+  font-family: "Inter-light";
+  src: url(‘/font/Inter/Inter-Light) format(‘truetype’);
+  font-family: "Inter-medium";
+  src: url(‘/font/Inter/Inter-Medium) format(‘truetype’);
+  font-family: "Dahlia";
+  src: url(‘/font/dahlia) format("opentype");
+}
+/* ce fichier est utilisé pour réinitialiser les styles par défaut du navigateur */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter-regular";
+  src: url(‘/font/Inter/Inter-Regular’) format(‘truetype’);
+  font-family: "Inter-light";
+  src: url(‘/font/Inter/Inter-Light) format(‘truetype’);
+  font-family: "Inter-medium";
+  src: url(‘/font/Inter/Inter-Medium) format(‘truetype’);
+  font-family: "Dahlia";
+  src: url(‘/font/dahlia) format("opentype");
+}
+h1 {
+  font-size: 200px;
+  font-family: "Dahlia", serif;
+  margin-bottom: normal;
+  color: #D1BFE8;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 96px;
+  font-family: "Inter-medium", sans-serif;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: "Inter-regular", sans-serif;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Inter-light", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 920px) {
+  h1 {
+    font-size: 160px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  h1 {
+    font-size: 120px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  h2 {
+    font-size: 64px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  a {
+    font-size: 18px;
+  }
+}
+
+@font-face {
+  font-family: "Inter-regular";
+  src: url(‘/font/Inter/Inter-Regular’) format(‘truetype’);
+  font-family: "Inter-light";
+  src: url(‘/font/Inter/Inter-Light) format(‘truetype’);
+  font-family: "Inter-medium";
+  src: url(‘/font/Inter/Inter-Medium) format(‘truetype’);
+  font-family: "Dahlia";
+  src: url(‘/font/dahlia) format("opentype");
+}
+@font-face {
+  font-family: "Inter-regular";
+  src: url(‘/font/Inter/Inter-Regular’) format(‘truetype’);
+  font-family: "Inter-light";
+  src: url(‘/font/Inter/Inter-Light) format(‘truetype’);
+  font-family: "Inter-medium";
+  src: url(‘/font/Inter/Inter-Medium) format(‘truetype’);
+  font-family: "Dahlia";
+  src: url(‘/font/dahlia) format("opentype");
+}
+h1 {
+  font-size: 200px;
+  font-family: "Dahlia", serif;
+  margin-bottom: normal;
+  color: #D1BFE8;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 96px;
+  font-family: "Inter-medium", sans-serif;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: "Inter-regular", sans-serif;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Inter-light", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 920px) {
+  h1 {
+    font-size: 160px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  h1 {
+    font-size: 120px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  h2 {
+    font-size: 64px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  a {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: #3e2b44;
+  overflow-x: hidden;
+}
+body .text-animation {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media only screen and (max-width: 1080px) {
+  body .text-animation {
+    display: none;
+  }
+}
+body main {
+  margin: 36px 90px 0;
+  z-index: 1;
+}
+@media only screen and (max-width: 920px) {
+  body main {
+    margin: 36px 36px 0;
+  }
+}
+@media only screen and (max-width: 660px) {
+  body main {
+    margin: 18px 18px 0;
+  }
+}
+body main .section1 {
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 1080px) {
+  body main .section1 {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  body main .section1 {
+    background-color: #3e2b44;
+  }
+}
+body main .section1__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16% 0;
+}
+body main .section1__wrapper h1:nth-child(2) {
+  margin: 0 0 0 48px;
+}
+body main .section2 {
+  margin: 90px 0 0;
+  width: 100%;
+}
+@media only screen and (max-width: 920px) {
+  body main .section2 {
+    margin: 36px 0 0;
+  }
+}
+body main .section2__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 28px 0 0 0;
+  height: 100%;
+}
+@media only screen and (max-width: 920px) {
+  body main .section2__wrapper {
+    padding: 12px 0 0;
+  }
+}
+body main .section2__wrapper__item {
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  opacity: 0.3;
+}
+body main .section2__wrapper__item:hover {
+  opacity: 1;
+  transition: 0.2s ease;
+}
+body main .section3 {
+  margin: 90px 0 0;
+  width: 100%;
+}
+@media only screen and (max-width: 920px) {
+  body main .section3 {
+    margin: 36px 0 0;
+  }
+}
+body main .section3 h2 {
+  font-family: "Dahlia", serif;
+  margin: 0;
+  width: 100%;
+}
+body main .section3__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 28px 0 0 0;
+  width: 100%;
+}
+body main .section3__wrapper__item {
+  border-top: 1px solid #ffffff;
+  width: 100%;
+}
+body main .section3__wrapper__item-border {
+  border-bottom: 1px solid #ffffff;
+}
+body main .section3__wrapper__item__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+body main .section3__wrapper__item__wrapper__item {
+  display: none;
+}
+@media screen and (min-width: 660px) {
+  body main .section3__wrapper__item__wrapper:hover .section3__wrapper__item__wrapper__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  body main .section3__wrapper__item__wrapper:hover .section3__wrapper__item__wrapper__item p {
+    max-width: 40%;
+    margin: 0;
+  }
+  body main .section3__wrapper__item__wrapper:hover h2 {
+    display: none;
+    transition: 1s ease;
+  }
+}
+body footer {
+  margin: 90px 90px 36px;
+}
+@media only screen and (max-width: 920px) {
+  body footer {
+    margin: 36px 36px 36px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  body footer {
+    margin: 18px 18px 18px;
+  }
+}
+body footer .footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 520px) {
+  body footer .footer__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    gap: 40px;
+  }
+}
+body footer p {
+  font-weight: 200;
+  margin: 0;
+}
+@media only screen and (max-width: 520px) {
+  body footer p {
+    width: 100%;
+  }
+}
+body footer .footer__socials__wrapper {
+  position: relative;
+}
+body footer .footer__socials__wrapper h3 {
+  margin: 0;
+}
+body footer .footer__socials__wrapper .alert {
+  display: none;
+  background-color: #D1BFE8;
+  color: #333333;
+  border-radius: 4px;
+  padding: 2px 8px;
+  position: absolute;
+  left: -120px;
+  top: 36px;
+  text-align: center;
+}
+@media only screen and (max-width: 920px) {
+  body footer .footer__socials__wrapper .alert {
+    left: -90px;
+    top: 36px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  body footer .footer__socials__wrapper .alert {
+    max-width: 72px;
+  }
+}
+body footer .footer__socials__wrapper__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 40px 0 0px;
+}
+body footer .footer__socials__wrapper__content:hover h3 {
+  text-decoration: underline;
+  transition: 1s ease;
+}
+
+/*# sourceMappingURL=main.css.map */
