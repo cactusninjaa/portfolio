@@ -7,10 +7,25 @@
 
     font-family: 'Inter-medium';
 	src: url(‘/font/Inter/Inter-Medium) format(‘truetype’);
-
-    font-family: 'Dahlia';
-    src: url(‘/font/dahlia) format('opentype');
 }
+@font-face {
+    font-family: "Dahlia";
+    src:
+        url(../../font/Dahlia/dahlia.otf) format("opentype"),
+        url(../../font/Dahlia/dahlia.woff2) format('woff2'),
+        url(../../font/Dahlia/dahlia.woff) format("woff");
+}
+
+@font-face{
+    font-family: sacramento;
+    font-style:normal;
+    font-weight:400;
+    src:local('Sacramento'),
+    url(https://fonts.cdnfonts.com/s/57819/SacramentoRegular-X3LaG.woff) 
+    format('woff')
+}       
+
+
 // Variables de typographie
     // Base values
     $base-font-size: 24px;
@@ -21,7 +36,8 @@
     $font-family-light: 'Inter-light', sans-serif;
     $font-family-regular: 'Inter-regular', sans-serif;
     $font-family-medium: 'Inter-medium', sans-serif;
-    $font-family-dahlia: 'Dahlia', serif;
+    $font-family-dahlia: 'sacramento';
+    
 
 
     // Calculez les tailles de police basées sur le $base-font-size

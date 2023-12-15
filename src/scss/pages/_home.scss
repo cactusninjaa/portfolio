@@ -92,11 +92,12 @@ body {
             width: 100%;
 
             h2{
-                font-family: 'Dahlia', serif;
+                font-family: sacramento, serif;
                 margin: 0;
                 width: 100%;
+                text-transform: none;
             }
-
+           
             &__wrapper{
                 @include flex-container(column, flex-start, center);
                 @include padding(28px 0 0 0 );
@@ -118,13 +119,15 @@ body {
 
                         &__item{
                             display: none;
+
+                            &__img{
+                                width: 30%;
+                            }
                         }
 
                         @media screen and (min-width: 660px){
 
                             &:hover{
-
-
 
                                 .section3__wrapper__item__wrapper__item{
                                     @include flex-container(row, space-between, center);

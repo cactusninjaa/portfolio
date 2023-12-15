@@ -1,7 +1,5 @@
 // _mixins.scss
 
-
-
 // Mixin pour Flexbox
 @mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
     display: flex;
