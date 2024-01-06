@@ -5,9 +5,10 @@
 %heading1{
   font-size: $font-size-h1;
   font-family: $font-family-dahlia;
-  margin-bottom: $margin-bottom-h1;
   color: $color-primary;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -7.2px;
+  text-transform: uppercase;
 }
 
 // Titre de deuxième niveau
@@ -52,16 +53,23 @@
 h1 {
   @extend %heading1;
   @include respond-to(920px) {
-    font-size: 160px;
+    font-size: 100px;
+    letter-spacing: -6.2px;
+
   }
   @include respond-to(660px) {
-    font-size: 120px;
+    font-size: 80px;
+    letter-spacing: -5.2px;
+
   }
   @include respond-to(520px) {
-    font-size: 100px;
+    font-size: 60px;
+    letter-spacing: -4.2px;
+
   }
   @include respond-to(440px) {
-    font-size: 80px;
+    font-size: 50px;
+    letter-spacing: -3.2px;
   }
 }
 h2 {
