@@ -520,6 +520,10 @@ body main .section2__skills-wrapper .column {
 body main .section2__skills {
   position: relative;
 }
+body main .section2__skills:hover .section2__name {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
 body main .section2__img {
   display: flex;
   flex-direction: row;

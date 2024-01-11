@@ -175,7 +175,15 @@ body {
             } 
             &__skills{
                 position: relative;
+
+                &:hover{
+                    .section2__name{
+                        opacity: 0;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
             }
+
 
             &__img{
                 @include flex-container(row, center, space-between);
