@@ -86,6 +86,7 @@ body {
             }
 
             &__skills-wrapper{
+                
                 position: relative;
                 display: grid;
                 width: 100%;
@@ -203,6 +204,7 @@ body {
                 border: 5px solid $color-white;
                 border-radius: 32px;
                 img{
+                    width: 100px;
                     @include respond-to (820px){
                         width: 100px;
                     }
