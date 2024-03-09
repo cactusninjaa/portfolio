@@ -1,7 +1,7 @@
 
 body {
     background-color: $color-secondary ;
-    overflow-x: hidden;
+    overflow-y: auto;
 
     ::-webkit-scrollbar {
         display: none;
@@ -58,7 +58,7 @@ body {
             &__wrapper{
 
                 @include flex-container(column, center, flex-start);
-                @include padding(12% 0);
+                @include padding(10% 0);
                 @include respond-to(920px){
                     @include padding(24% 0);
                 }
@@ -68,19 +68,16 @@ body {
                 @include respond-to(500px){
                     @include padding(42% 0);
                 }
-
-                h1:nth-child(2){
-                    @include margin(0 0 0 48px);
-                }
             }
         }   
 
         .section2{
 
+
             h3{
                 padding-bottom: 30px;
             }
-            @include padding(90px 0 0 0);
+            @include padding(90px 0);
             @include respond-to(920px){
                 @include padding(36px 0 0);
             }
@@ -183,6 +180,12 @@ body {
                         transition: 0.2s ease-in-out;
                     }
                 }
+                @include respond-to(810px){
+                    .section2__name{
+                        opacity: 0;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
             }
 
 
@@ -192,8 +195,8 @@ body {
                 gap: 60px;
                 @include respond-to(700px){
                     gap: 40px
-
                 }
+                height: 100%;
                 @include respond-to(480px){
                     @include padding(20px 0px);
                     gap: 20px;
@@ -205,6 +208,8 @@ body {
                 border-radius: 32px;
                 img{
                     width: 100px;
+                    aspect-ratio: 1/1;
+
                     @include respond-to (820px){
                         width: 100px;
                     }
@@ -251,8 +256,8 @@ body {
 
         .section3{
             position: relative;
-            overflow-x: scroll;
-            @include padding(90px 0 0 0);
+            overflow-x: auto;
+            overflow-y: hidden;
             @include respond-to(1200px){
                 @include margin(36px 90px 0);
             }
@@ -273,6 +278,7 @@ body {
                     top: 0;
                     left: 90px;
                     padding-bottom: 30px;
+                    overflow: hidden;
                 }
             }
 
@@ -296,6 +302,7 @@ body {
             }
 
             &__project{
+
                 // @media screen and (min-width: 1200px) {
                 //     @include margin(36px 90px 0);
                 // }
@@ -378,6 +385,8 @@ body {
                 @include respond-to (600px){
                     gap: 6px;
                 }
+                flex-wrap: wrap;
+
             }
 
             &__tags{
@@ -428,6 +437,11 @@ body {
                 @include flex-container(column-reverse, center, flex-end);
                 width: 100%;
                 gap: 40px;
+            }
+            #tag{
+                @include respond-to(520px) {
+                    align-self: center;
+                }
             }
         }
 

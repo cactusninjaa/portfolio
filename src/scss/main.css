@@ -322,7 +322,7 @@ a:hover {
 
 body {
   background-color: #3e2b44;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 body ::-webkit-scrollbar {
   display: none;
@@ -378,7 +378,7 @@ body main .section1__wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 12% 0;
+  padding: 10% 0;
 }
 @media only screen and (max-width: 920px) {
   body main .section1__wrapper {
@@ -395,11 +395,8 @@ body main .section1__wrapper {
     padding: 42% 0;
   }
 }
-body main .section1__wrapper h1:nth-child(2) {
-  margin: 0 0 0 48px;
-}
 body main .section2 {
-  padding: 90px 0 0 0;
+  padding: 90px 0;
 }
 body main .section2 h3 {
   padding-bottom: 30px;
@@ -524,6 +521,12 @@ body main .section2__skills:hover .section2__name {
   opacity: 0;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (max-width: 810px) {
+  body main .section2__skills .section2__name {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+  }
+}
 body main .section2__img {
   display: flex;
   flex-direction: row;
@@ -531,6 +534,7 @@ body main .section2__img {
   align-items: space-between;
   padding: 30px 0px;
   gap: 60px;
+  height: 100%;
   border: 5px solid #ffffff;
   border-radius: 32px;
 }
@@ -548,6 +552,7 @@ body main .section2__img {
 }
 body main .section2__img img {
   width: 100px;
+  aspect-ratio: 1/1;
 }
 @media only screen and (max-width: 820px) {
   body main .section2__img img {
@@ -591,8 +596,8 @@ body main .section2__name span {
 }
 body main .section3 {
   position: relative;
-  overflow-x: scroll;
-  padding: 90px 0 0 0;
+  overflow-x: auto;
+  overflow-y: hidden;
   font-family: "poppins", sans-serif;
 }
 @media only screen and (max-width: 1200px) {
@@ -618,6 +623,7 @@ body main .section3 {
     top: 0;
     left: 90px;
     padding-bottom: 30px;
+    overflow: hidden;
   }
 }
 body main .section3 h2 {
@@ -737,6 +743,7 @@ body main .section3__tags-line {
   justify-content: flex-start;
   align-items: stretch;
   gap: 12px;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 600px) {
   body main .section3__tags-line {
@@ -806,6 +813,11 @@ body footer .footer__wrapper {
     align-items: flex-end;
     width: 100%;
     gap: 40px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  body footer .footer__wrapper #tag {
+    align-self: center;
   }
 }
 body footer p {
